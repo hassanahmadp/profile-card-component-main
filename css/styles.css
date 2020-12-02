@@ -11,21 +11,20 @@ body {
 }
 
 .back-bubbles {
-  position: absolute;
   height: 75vh;
+  z-index: 1;
 }
 
-.top-bubble {
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.card {
+  position: absolute;
+  z-index: 10;
+  width: 30rem;
+  height: 40rem;
+  background-color: white;
+  color: color(very-dark-desaturated-blue);
 }
 
-.bot-bubble {
-  bottom: 0;
-  right: 0;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+.card img.card-img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
