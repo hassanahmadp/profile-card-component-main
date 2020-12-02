@@ -1,0 +1,19 @@
+$colors: (
+  dark-cyan: hsl(185, 75%, 39%),
+  very-dark-desaturated-blue: hsl(229, 23%, 23%),
+  dark-grayish-blue: hsl(227, 10%, 46%)
+);
+
+@function colors($color) {
+    @return map-get($colors, $color )
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: colors(dark-cyan);
+}
