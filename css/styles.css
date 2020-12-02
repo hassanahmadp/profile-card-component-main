@@ -8,4 +8,23 @@
 body {
   background-color: #19a2ae;
 }
+
+.back-bubbles {
+  position: absolute;
+  height: 75vh;
+}
+
+.top-bubble {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bot-bubble {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
 /*# sourceMappingURL=styles.css.map */

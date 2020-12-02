@@ -6,7 +6,7 @@ $colors: (
 
 @function colors($color) {
     @return map-get($colors, $color )
-}
+};
 
 * {
   margin: 0;
@@ -16,4 +16,21 @@ $colors: (
 
 body {
     background-color: colors(dark-cyan);
+}
+
+.back-bubbles {
+    position: absolute;
+    height: 75vh;
+}
+
+.top-bubble {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.bot-bubble {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
 }
