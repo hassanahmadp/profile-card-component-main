@@ -3,28 +3,124 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 body {
+  height: 100vh;
   background-color: #19a2ae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  color: #2d3248;
+}
+
+span,
+p {
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .back-bubbles {
+  position: absolute;
   height: 75vh;
   z-index: 1;
 }
 
+.top-bubble {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bot-bubble {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
 .card {
-  position: absolute;
   z-index: 10;
-  width: 30rem;
-  height: 40rem;
+  width: 25rem;
+  border-radius: 12px;
+  overflow: hidden;
   background-color: white;
   color: color(very-dark-desaturated-blue);
 }
 
-.card img.card-img {
+.card .card-imgs-box {
+  height: 25%;
+  position: relative;
+}
+
+.card .card-imgs-box .card-img {
   width: 100%;
+  height: 100%;
+}
+
+.card .card-imgs-box .card-person {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  border-radius: 50%;
+  width: 7rem;
+  border: 0.4rem solid white;
+}
+
+.card .card-body {
+  margin: 5rem 0 3rem;
+  text-align: center;
+}
+
+.card .card-body p {
+  position: relative;
+  top: 1rem;
+}
+
+.card .card-footer {
+  margin: 0 1rem;
+  padding: 2rem 0;
+  border-top: 1px solid #e6e7ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card .card-footer p {
+  position: relative;
+  top: 0.5rem;
+  font-size: .8rem;
+  letter-spacing: .1rem;
 }
 /*# sourceMappingURL=styles.css.map */
