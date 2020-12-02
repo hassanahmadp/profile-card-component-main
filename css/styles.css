@@ -9,15 +9,6 @@
 body {
   height: 100vh;
   background-color: #19a2ae;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   overflow: hidden;
   color: #2d3248;
 }
@@ -40,22 +31,23 @@ h2 {
 
 .back-bubbles {
   position: absolute;
-  height: 75vh;
   z-index: 1;
+  width: 70vw;
+  height: 65rem;
 }
 
 .top-bubble {
   top: 0;
-  left: 0;
+  left: 8rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 .bot-bubble {
-  bottom: 0;
-  right: 0;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  bottom: -12rem;
+  right: -2.5rem;
+  -webkit-transform: translate(30%, 50%);
+          transform: translate(30%, 50%);
 }
 
 .card {

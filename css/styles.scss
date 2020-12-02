@@ -31,7 +31,6 @@ $colors: (
 body {
   height: 100vh;
   background-color: colors(dark-cyan);
-  @include idealFlex;
   overflow: hidden;
   color: colors(very-dark-desaturated-blue);
 }
@@ -54,20 +53,21 @@ h2 {
 
 .back-bubbles {
   position: absolute;
-  height: 75vh;
   z-index: 1;
+  width: 70vw;
+  height: 65rem;
 }
 
 .top-bubble {
   top: 0;
-  left: 0;
+  left: 8rem;
   transform: translate(-50%, -50%);
 }
 
 .bot-bubble {
-  bottom: 0;
-  right: 0;
-  transform: translate(50%, 50%);
+  bottom: -12rem;
+  right: -2.5rem;
+  transform: translate(30%, 50%);
 }
 
 .card {
