@@ -59,6 +59,11 @@ h2 {
 }
 
 .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 10;
   width: 25rem;
   border-radius: 12px;
@@ -120,7 +125,7 @@ h2 {
 .card .card-footer p {
   position: relative;
   top: 0.5rem;
-  font-size: .8rem;
-  letter-spacing: .1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
 }
 /*# sourceMappingURL=styles.css.map */
